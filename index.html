@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Betting Game</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="player.js"></script>
+  <script src="game.js"></script>
+  <script src="bet_game.js"></script>
 </head>
 <body>
-  
+  <div class="row">
+    <aside class="small-2 column">
+    </aside> 
+    <div class="small-8 column">
+      <div class= "row" id="front-image">
+        <h1>Let's win money</h1>
+      </div>
+      <div class="info row">
+        <form class= "small-8 columns" id="user-data">
+          <div class="bet small-5 column">
+             <label class="text-center">Enter Bet
+               <input id="user-bet" type="text" placeholder="Decimal from 5 to 10">
+             </label>
+          </div>
+          <div class="guess small-5 column">
+             <label class="text-center">Enter Guess
+               <input id="user-guess" type="text" placeholder="Integer from 1 to 10">
+             </label>
+          </div>
+          <button class="button small-2 column" type="submit" value="Submit">Submit</button>
+        </form>
+        <div class="money small-4 column text-center">
+          <p>Total Money</p>
+          <p id="user-money">25</p>
+        </div>
+      </div>
+      </br>
+      <div class="row text-center" id="game-status">
+        <div class="small-6 column" id="random-num">
+          <p>Number</p>
+          <p>TBD</p>
+        </div>
+        <div class="small-6 column" id="prize">
+          <p>Prize</p>
+          <p>TBD</p>
+        </div>
+      </div>
+    </div>
+    <aside class="small-2 column">
+    </aside>
+  </div>
 </body>
 </html>
